@@ -24,21 +24,42 @@ let result = [...numberArray, ...stringArray];
 result.unshift("h@ck")
 result.push("h@ck")
 
+
+
 for(let i = 0; i< result.length; i++){
-    result.splice(1,1,"one")
-    result.splice(3,1,"three")
-    result.splice(5,1,"five")
-    result.splice(6, 0,"h@ck")
-    result.splice(7,1,"f00")
-    result.splice(8,1,"Bar")
-    result.splice(9,1,"b@z")
-    result.splice(10,1,"quX")
-    result.splice(11,1,"3ch0")
-   
-    break;
+    if(result[1] === 1 ){
+        result.splice(1,1,"one")
+      
+    if(result[3] === 3 )
+        result.splice(3,1,"three")
+      
+
+    if(result[5] === 5 )
+        result.splice(5,1,"five")
+        
+    if(result[6]== "foo")    
+        result.splice(6,1,"f00")
+        
+
+    if(result[7][0] === "b" )
+        result[7] =result[7].charAt(0).toUpperCase() + result[7].slice(1)
+    
+    if(result[8] === "baz" )
+        result[8] = result[8].split("a").join("@")
+    
+    if(result[9] === "qux" )
+        result[9] = result[9].split("x").join("X")
+    
+    if(result[10] === "echo" )
+        result.splice(10,1,"3ch0")
+    
+        result.splice(6,0,"h@ck")
+
+    console.log(result)
 }
 
-console.log(result)
+}
+
 
 
 
