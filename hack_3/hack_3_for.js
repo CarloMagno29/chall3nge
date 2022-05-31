@@ -7,6 +7,9 @@
  */
 let result = [];
 
-
+for (let i= 5; i>=1; i--){
+    result.push(i)
+}
+console.log(result)
 //export result
 module.exports = result;

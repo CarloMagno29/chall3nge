@@ -17,7 +17,30 @@
  */
 let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
-let result = [];
+let result = [...numberArray, ...stringArray];
+
+
+
+result.unshift("h@ck")
+result.push("h@ck")
+
+for(let i = 0; i< result.length; i++){
+    result.splice(1,1,"one")
+    result.splice(3,1,"three")
+    result.splice(5,1,"five")
+    result.splice(6, 0,"h@ck")
+    result.splice(7,1,"f00")
+    result.splice(8,1,"Bar")
+    result.splice(9,1,"b@z")
+    result.splice(10,1,"quX")
+    result.splice(11,1,"3ch0")
+   
+    break;
+}
+
+console.log(result)
+
+
 
 
 //export result
